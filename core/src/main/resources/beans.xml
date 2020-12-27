@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+">
+<!--    This is also not required as we are introducing Configuration Annotation-->
+<!--    <context:comrponent-scan base-package="consolelog.accademy"/>-->
+    <!-- bean definitions here -->
+<!--    These are not required anymore as we are using compoenent scan-->
+<!--    <bean id="NumberGenerator" class="consolelog.accademy.NumberGeneratorImpl"/>-->
+<!--    <bean id="Game" class="consolelog.accademy.GameImpl">-->
+<!--        &lt;!&ndash;        <constructor-arg ref="NumberGenerator"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="NumberGenerator" ref="NumberGenerator"/>&ndash;&gt;-->
+<!--    </bean>-->
+    <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
+
+</beans>
