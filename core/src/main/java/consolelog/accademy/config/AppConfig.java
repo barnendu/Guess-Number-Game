@@ -12,11 +12,6 @@ import org.springframework.context.annotation.Import;
 public class AppConfig {
 
     @Bean
-    public NumberGenerator numberGenerator(){
-        return new NumberGeneratorImpl();
-    }
-
-    @Bean
     public Game game(){
         return new GameImpl();
     }

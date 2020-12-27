@@ -5,12 +5,17 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+@Component
 public class NumberGeneratorImpl implements NumberGenerator {
     private final Random random = new Random();
 
+    private final int maxNumber;
+
     @Autowired
-    @MaxNumber
-    private int maxNumber;
+    public NumberGeneratorImpl( @MaxNumber int maxNumber) {
+        // it's always good practice to have somthing autowired inside the constructor as it's make things immutaable.
+        this.maxNumber = maxNumber;
+    }
 
     @Override
     public int next() {
